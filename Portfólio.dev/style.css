@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(IMG\ NEGRA.webp);
+    height: 100vh;
+}
+
+
+.interface1{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.interface2{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato2 button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+
+}
+
+.btn-contato{
+    margin-left: 180px;
+}
+
+#menu {
+    margin-left: 40px;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+/* Estilo do Cabeçalho */
+header{
+    padding: 40px 220px 220px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    color: #a09d9d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+header a:hover{
+    color: white;
+    transform: scale(1.5);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav li{
+    display: inline-block; 
+    padding: 0 40px; 
+}
+
+nav{
+    padding-left: 330px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 38px;
+    gap: 90%;
+    
+}
+
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 35px 0;
+    font-size: 24px;
+}
+
+.topo-do-site .topo-site{
+    position: relative;
+    animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+
+img{
+    width: 470px;
+    height: 500px;
+    border-radius: 46%;
+    margin-left: 150px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+section.especiliadades {
+    padding: 40px 4%;
+}
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especiliadades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.titulo {
+    color: #fff;
+    margin-left: 72 0px;
+    font-size: 30px;
+
+}
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 20px
+}
+
+
+/* ESTILO DO PORTFÓLIO */
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.titulo{
+    margin-left: 530px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 10px 10px 80px 10px rgb(56, 54, 54);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #ffffff78;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+footer .line-footer-borda{
+    color: #fff;
+}
+
+
+.line-footer-borda{
+    padding: 10px;
+}
+.Linkedin button{
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    
+     
+}
+@media screen and (max-width: 1020px) {
+}
